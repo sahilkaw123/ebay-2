@@ -1,0 +1,79 @@
+
+
+<h1 >Choose your trip  </h1>
+<div class="row" ng-controller="login">
+		<div class="col-md-4">
+			<div class="row">
+				<div class="col-md-12" style="margin: 10px;">
+					Source &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<select ng-model="username">
+	<option value="San Francisco">San Francisco</option>				 
+  <option value="San Jose">San Jose</option>
+  <option value="San Mateo">San Mateo</option>
+  <option value="Los Angeles">Los Angeles</option>
+  <option value="Sacramento">Sacramento</option>
+  <option value="Los Carlos">Los Carlos</option>
+  <option value="France">France</option>
+  <option value="England">England</option>
+  <option value="Japan">Japan</option>
+  <option value="Korea">Korea</option>
+  <option value="Brazil">Brazil</option>
+  <option value="Tokyo">Tokyo</option>
+  <option value="India">India</option>
+  <option value="Austria">Austria</option>
+</select> 
+						
+				</div>
+				<div class="col-md-12" style="margin: 10px;">
+					Destination&nbsp&nbsp&nbsp&nbsp<select ng-model="password">
+  <option value="San Francisco">San Francisco</option>				 
+  <option value="San Jose">San Jose</option>
+  <option value="San Mateo">San Mateo</option>
+  <option value="Los Angeles">Los Angeles</option>
+  <option value="Sacramento">Sacramento</option>
+  <option value="Los Carlos">Los Carlos</option>
+  <option value="France">France</option>
+  <option value="England">England</option>
+  <option value="Japan">Japan</option>
+  <option value="Korea">Korea</option>
+  <option value="Brazil">Brazil</option>
+  <option value="Tokyo">Tokyo</option>
+  <option value="India">India</option>
+  <option value="Austria">Austria</option>
+</select> 
+						
+				</div>
+				
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="submit" class="btn btn-success" ng-click="submit();"
+						value="Submit" />
+
+				
+					
+    </div><br><br>
+    
+    <table class="table table-bordered table-inverse">
+  <thead>
+    <tr>
+      
+      <th>Source</th>
+      <th>Destination</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      
+      <td><div ng-repeat="person in source track by $index ">{{person}}</div></td>
+      <td><div ng-repeat="dest in destination track by $index ">{{dest}}</div></td>
+      
+    </tr>
+    </tbody>
+</table>
+    
+						
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	</body>
